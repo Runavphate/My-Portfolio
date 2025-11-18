@@ -28,6 +28,10 @@ html {
         text-align: center;
         
       }
+
+      header p {
+        font-size: 17px;
+      }
   
       .photo {
         border-radius: 100px;
@@ -48,10 +52,24 @@ html {
         text-align: center;
         margin-left:-60px ;
       }
+
+      #about p {
+        margin: auto;
+        width: 70%;
+        font-size: 18px;
+      }
+
+      #education p {
+        font-size: 18px;
+      }
   
       section h2 {
         font-size: 33px;
         margin-bottom: 30px;
+      }
+
+      #contact h2 {
+        margin-bottom: 1px;
       }
   
       .skills,
@@ -183,6 +201,10 @@ html {
   margin-top: 6px;
   margin-bottom: 16px;
   }
+
+  #subject {
+    height: 50px;
+  }
   
   input[type=submit] {
   background-color: #686868;
@@ -246,6 +268,10 @@ html {
       margin-top: -10px;
       text-align: center;
     }
+
+    header p {
+      font-size: 17px;
+    }
   
     .photo {
       border-radius: 100px;
@@ -265,10 +291,24 @@ html {
       padding: 55px 10%;
       text-align: center;
     }
+
+    #about p {
+      margin: auto;
+      width: 70%;
+      font-size: 18px;
+    }
+
+    #education p {
+      font-size: 18px;
+    }
   
     section h2 {
       font-size: 33px;
       margin-bottom: 30px;
+    }
+
+    #contact h2 {
+      margin-bottom: 1px;
     }
   
     .skills,
@@ -398,6 +438,10 @@ html {
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
+  }
+
+  #subject {
+    height: 50px;
   }
   
   input[type=submit] {

@@ -5,60 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decentralized Voting System</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #ffffff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        h1,
-        h2 {
-            text-align: center;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            margin: 20px 0;
-        }
-
-        label,
-        input,
-        select,
-        button {
-            margin: 5px 0;
-            padding: 10px;
-            font-size: 16px;
-        }
-
-        button {
-            background-color: #6e6e6e;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #000000;
-        }
-
-        #results {
-            list-style-type: none;
-            padding: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="voting-style.css">
 </head>
 
 <body>
@@ -88,38 +35,11 @@
             <h2>Voting Results</h2>
             <ul id="results"></ul>
         </div>
+        <div class="disclaimer">
+            <p>This is a simulation of a decentralized voting system. It is not connected to a real blockchain and does not provide a secure or auditable voting process.</p>
+        </div>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const loginForm = document.getElementById('login-form');
-            const voteForm = document.getElementById('vote-form');
-            const results = document.getElementById('results');
-
-            const exampleResults = {
-                'BJP': 50,
-                'Congress': 30,
-                'Other': 20
-            };
-
-            loginForm.addEventListener('submit', (event) => {
-                event.preventDefault();
-                alert('Logged in successfully!');
-            });
-
-            voteForm.addEventListener('submit', (event) => {
-                event.preventDefault();
-                const selectedCandidate = document.getElementById('candidates').value;
-                alert(`Voted for ${selectedCandidate}!`);
-            });
-
-            for (const [candidate, votes] of Object.entries(exampleResults)) {
-                const listItem = document.createElement('li');
-                listItem.textContent = `${candidate}: ${votes} votes`;
-                results.appendChild(listItem);
-            }
-        });
-
-    </script>
+    <script src="voting-script.js"></script>
 </body>
 
 </html>

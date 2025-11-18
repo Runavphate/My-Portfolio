@@ -6,18 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="yourfavicon.ico" type="image/x-icon" />
+  <link rel="icon" href="Images/My Photo.jpg" type="image/x-icon" />
 </head>
 
 <body>
   <header>
     <h1>Runav Phate</h1>
-    <p style="font-size: 17px;">Blockchain Technology Student</p>
+    <p>Blockchain Technology Student</p>
   </header>
 
-  <div>
-    <img class="photo" src="Images/My Photo.jpg"/>
-  </div>
+  <img class="photo" src="Images/My Photo.jpg" alt="My Photo" />
 
   <nav>
     <ul>
@@ -42,14 +40,14 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p style="margin: auto; width: 70%; font-size: 18px;">
+    <p>
       Hello! I'm a dedicated student working towards a degree in Blockchain Technology. I'm thrilled about the possibilities that blockchain and cryptocurrency offer in transforming our understanding of decentralization, transparency, and security.
     </p>
   </section>
 
   <section id="education">
     <h2>Education</h2>
-    <p style="font-size: 18px;">
+    <p>
       Bachelor of Science (B.Sc) in Blockchain Technology<br />
       Savitribai Phule Pune University (SPPU), Pune, Maharashtra<br />
       Expected to complete: May 2028
@@ -109,43 +107,43 @@
         <img src="Sources/frontend.jpg" alt="Front End Certification" height="60" />
         <h3>Front End Development</h3>
         <p>Certified in front-end development by FreeCodeCamp, Skilled in HTML, CSS, and JavaScript.</p>
-        <button onclick="image1()" class="button2" type="button">View Certificate</button>
+        <button onclick="openImage('Images/Frontend.JPG')" class="button2" type="button">View Certificate</button>
       </div>
       <div class="skill">
         <img src="Sources/Responsive.jpg" alt="Responsive Design Certification" height="60" />
         <h3>Responsive Web Design</h3>
         <p>Certified in responsive web design by FreeCodeCamp, ensuring web accessibility across all devices.</p>
-        <button onclick="image2()" class="button2" type="button">View Certificate</button>
+        <button onclick="openImage('Images/Web.JPG')" class="button2" type="button">View Certificate</button>
       </div>
         <div class="skill">
-        <img src="Sources/Python.png" height="50" />
+        <img src="Sources/Python.png" alt="Python" height="50" />
         <h3>Python</h3>
         <p>Certified in Python by GeeksofGeeks, capable to creating Software and Web pages.</p>
-        <button onclick="image3()" class="button2" type="button">View Certificate</button>
+        <button onclick="openImage('Images/Python.JPG')" class="button2" type="button">View Certificate</button>
       </div>
       <div class="skill">
-        <img src="Sources/Java.png" height="50" />
+        <img src="Sources/Java.png" alt="Java" height="50" />
         <h3>Java</h3>
         <p>Certified in Java by Mindluster, showcasing proficiency in mobile and web application development.</p>
-        <button onclick="image4()" class="button2" type="button">View Certificate</button>
+        <button onclick="openImage('Images/java.jpg')" class="button2" type="button">View Certificate</button>
       </div>
       <div class="skill">
         <img src="Sources/Autocad.png" alt="AutoCAD Certification" height="50" />
         <h3>AutoCAD</h3>
         <p>Certified in AutoCAD by Disha Computer Institute, capable of creating detailed 2D and 3D engineering drawings.</p>
-        <button onclick="image5()" class="button2" type="button">View Certificate</button>
+        <button onclick="openImage('Images/Autocad.jpeg')" class="button2" type="button">View Certificate</button>
       </div>
          <div class="skill">
-        <img src="Sources/Autocad.png" alt="Blockchain Certification" height="50" />
+        <img src="Sources/Blockchain.png" alt="Blockchain Certification" height="50" />
         <h3>Blockchain</h3>
         <p>Certified in Blockchain 101 by Infosys Springboard, capable to do tasks related to blockchain.</p>
-        <button onclick="image6()" class="button2" type="button">View Certificate</button>
+        <button onclick="openImage('Images/Blockchain.jpg')" class="button2" type="button">View Certificate</button>
       </div>
       <div class="skill">
-        <img src="Sources/Autocad.png" alt="Blockchain Certification" height="50" />
+        <img src="Sources/FullStack.png" alt="Full-Stack Web-Development Certification" height="50" />
         <h3>Full-Stack Web-Development</h3>
         <p>Certified in Full-Stack Web-Development by Udemy, Dr. Angela Yu, capable to Make Websites/Apps.</p>
-        <button onclick="image7()" class="button2" type="button">View Certificate</button>
+        <button onclick="openImage('Images/Full Stack.png')" class="button2" type="button">View Certificate</button>
       </div>
     </div>
   </section>
@@ -156,12 +154,12 @@
       <div class="skill">
         <h3>Decentralized Voting System</h3>
         <p>Blockchain-based voting system ensuring transparent, tamper-proof elections. Built with Solidity and Ethereum.</p>
-        <button onclick="Voting()" class="button2" type="button">View Project</button>
+        <button onclick="openProject('Projects/Voting.html')" class="button2" type="button">View Project</button>
       </div>
       <div class="skill">
         <h3>Student Admission Form</h3>
         <p>Interactive HTML form to collect user data for academic institutions to store it for future use.</p>
-        <button onclick="Form()" class="button2" type="button">View Project</button>
+        <button onclick="openProject('Projects/Form.html')" class="button2" type="button">View Project</button>
       </div>
       <div class="skill">
         <h3>NFT Marketlace</h3>
@@ -172,7 +170,7 @@
   </section>
 
   <section id="contact">
-    <h2 style="margin-bottom: 1px;">Contact</h2>
+    <h2>Contact</h2>
     <p>Feel free to reach out!</p>
     <a href="mailto:phaterunav@gmail.com" target="_blank">
       <img src="Sources/Email.jpg" alt="Email" width="58" />
@@ -187,7 +185,7 @@
     <div class="container">
       <form onsubmit="submitForm(); return false;">
         <input type="text" id="fname" name="fname" placeholder="Your name" required />
-        <textarea id="subject" name="subject" placeholder="Message" style="height: 50px" required></textarea>
+        <textarea id="subject" name="subject" placeholder="Message" required></textarea>
         <br />
         <input type="submit" value="Submit" />
       </form>
@@ -198,42 +196,7 @@
     <p>© 2025 Runav | All Rights Reserved</p>
   </footer>
 
-  <script>
-    function Form() {
-      window.open('Projects/Form.html', '_blank');
-    }
-    function Voting() {
-      window.open('Projects/Voting.html', '_blank');
-    }
-    function submitForm() {
-      alert("Response Recorded");
-    }
-    function image1() {
-      window.open('Images/Frontend.JPG', '_blank');
-    }
-    function image2() {
-      window.open('Images/Web.JPG', '_blank');
-    }
-    function image3() {
-      window.open('Images/Python.JPG', '_blank');
-    }
-    function image4() {
-      window.open('Images/java.jpg', '_blank');
-    }
-    function image5() {
-      window.open('Images/Autocad.jpeg', '_blank');
-    }
-    function image6() {
-      window.open('Images/Blockchain.jpg', '_blank');
-    }
-    function image7() {
-      window.open('Images/Full Stack.png', '_blank');
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
-
-
-
-

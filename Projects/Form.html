@@ -3,132 +3,18 @@
 
 <head>
   <title>Student Registration Form</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      margin: 0;
-      padding: 20px;
-    }
-
-    h1,
-    h2 {
-      text-align: center;
-      color: #333;
-    }
-
-    img {
-      display: block;
-      margin: 0 auto;
-    }
-
-    form {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="number"],
-    input[type="date"],
-    textarea,
-    select {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-
-    input[type="radio"],
-    input[type="checkbox"] {
-      margin-right: 10px;
-    }
-
-    .inline-label {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-
-    input[type="submit"],
-    input[type="reset"] {
-      width: 49%;
-      padding: 10px;
-      background-color: #5e5e5e;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    input[type="reset"] {
-      background-color: #4f7597;
-    }
-
-    input[type="submit"]:hover,
-    input[type="reset"]:hover {
-      background-color: #000000;
-    }
-
-    input[type="reset"]:hover {
-      background-color: #073d66;
-    }
-
-    .response-message {
-      text-align: center;
-      display: none;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      max-width: 600px;
-      margin: 20px auto;
-    }
-
-    .response-message p {
-      color: #666;
-      font-size: 18px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .button:hover {
-      background-color: #0056b3;
-    }
-  </style>
+  <link rel="stylesheet" href="form-style.css">
 </head>
 
 <body>
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtwpANpHAi4kmTlA0blNSooUNDr18BEWp6rw&s" alt="Sppu logo">
+  <img src="../Images/sppu-logo.png" alt="Sppu logo">
   <form id="registrationForm" onsubmit="showResponse(event)">
     <h1>Student Registration Form</h1>
-    <label for="F name">Enter your First name</label>
-    <input type="text" name="F name" id="F name" required>
+    <label for="first-name">Enter your First name</label>
+    <input type="text" name="first-name" id="first-name" required>
 
-    <label for="L name">Enter your Last name</label>
-    <input type="text" name="L name" id="L name" required>
+    <label for="last-name">Enter your Last name</label>
+    <input type="text" name="last-name" id="last-name" required>
 
     <label for="email">Email Id</label>
     <input type="email" name="email" id="email" required>
@@ -136,100 +22,100 @@
     <label for="contact">Phone no.</label>
     <input type="number" name="contact" id="contact" required>
 
-    <label for="date">Date of Birth</label>
-    <input type="date" name="date" id="date" required>
+    <label for="date-of-birth">Date of Birth</label>
+    <input type="date" name="date-of-birth" id="date-of-birth" required>
 
     <label for="address">Address</label>
     <textarea name="address" id="address" required></textarea>
 
-    <label for="ssc">SSC Marks</label>
-    <input type="number" name="ssc" id="ssc" required>
+    <label for="ssc-marks">SSC Marks</label>
+    <input type="number" name="ssc-marks" id="ssc-marks" required>
 
-    <label for="hsc">HSC Marks</label>
-    <input type="number" name="hsc" id="hsc" required>
+    <label for="hsc-marks">HSC Marks</label>
+    <input type="number" name="hsc-marks" id="hsc-marks" required>
 
     <h2>Select Admission Year</h2>
-    <div class="inline-label">
-      <input type="radio" name="std" id="std1">
-      <label for="std1">1 Year</label>
-    </div>
-    <div class="inline-label">
-      <input type="radio" name="std" id="std2">
-      <label for="std2">2 Year</label>
-    </div>
-    <div class="inline-label">
-      <input type="radio" name="std" id="std3">
-      <label for="std3">3 Year</label>
-    </div>
-    <div class="inline-label">
-      <input type="radio" name="std" id="std4">
-      <label for="std4">4 Year</label>
-    </div>
+    <label class="inline-label">
+      <input type="radio" name="admission-year" id="year-1">
+      1 Year
+    </label>
+    <label class="inline-label">
+      <input type="radio" name="admission-year" id="year-2">
+      2 Year
+    </label>
+    <label class="inline-label">
+      <input type="radio" name="admission-year" id="year-3">
+      3 Year
+    </label>
+    <label class="inline-label">
+      <input type="radio" name="admission-year" id="year-4">
+      4 Year
+    </label>
 
     <h2>Select Course</h2>
-    <div class="inline-label">
-      <input type="radio" name="cn" id="cn1">
-      <label for="cn1">Computer Science</label>
-    </div>
-    <div class="inline-label">
-      <input type="radio" name="cn" id="cn2">
-      <label for="cn2">Data Science</label>
-    </div>
-    <div class="inline-label">
-      <input type="radio" name="cn" id="cn3">
-      <label for="cn3">Blockchain Technology</label>
-    </div>
-    <div class="inline-label">
-      <input type="radio" name="cn" id="cn4">
-      <label for="cn4">Graphic Designing</label>
-    </div>
+    <label class="inline-label">
+      <input type="radio" name="course" id="computer-science">
+      Computer Science
+    </label>
+    <label class="inline-label">
+      <input type="radio" name="course" id="data-science">
+      Data Science
+    </label>
+    <label class="inline-label">
+      <input type="radio" name="course" id="blockchain-technology">
+      Blockchain Technology
+    </label>
+    <label class="inline-label">
+      <input type="radio" name="course" id="graphic-designing">
+      Graphic Designing
+    </label>
 
     <h2>Select Hobbies</h2>
+    <label class="inline-label">
+      <input type="checkbox" name="hobbies" id="drawing">
+      Drawing
+    </label>
+    <label class="inline-label">
+      <input type="checkbox" name="hobbies" id="writing">
+      Writing
+    </label>
+    <label class="inline-label">
+      <input type="checkbox" name="hobbies" id="dancing">
+      Dancing
+    </label>
+    <label class="inline-label">
+      <input type="checkbox" name="hobbies" id="sketching">
+      Sketching
+    </label>
     <div class="inline-label">
-      <input type="checkbox" name="hobbies" id="hobbies1">
-      <label for="hobbies1">Drawing</label>
-    </div>
-    <div class="inline-label">
-      <input type="checkbox" name="hobbies" id="hobbies2">
-      <label for="hobbies2">Writing</label>
-    </div>
-    <div class="inline-label">
-      <input type="checkbox" name="hobbies" id="hobbies3">
-      <label for="hobbies3">Dancing</label>
-    </div>
-    <div class="inline-label">
-      <input type="checkbox" name="hobbies" id="hobbies4">
-      <label for="hobbies4">Sketching</label>
-    </div>
-    <div class="inline-label">
-      <label for="hobbies">Other</label>
-      <input type="text" name="hobbies" id="hobbies">
+      <label for="other-hobbies">Other</label>
+      <input type="text" name="other-hobbies" id="other-hobbies">
     </div>
 
     <h2>Select Gender</h2>
-    <select name="Gender" id="gender" required>
-      <option value="1">Select</option>
-      <option value="2">Male</option>
-      <option value="3">Female</option>
-      <option value="4">Other</option>
+    <select name="gender" id="gender" required>
+      <option value="" disabled selected>Select</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
     </select>
 
     <h2>Select City</h2>
     <select name="city" id="city" required>
-      <option value="1">Select</option>
-      <option value="2">Mumbai</option>
-      <option value="3">Nagpur</option>
-      <option value="4">Thane</option>
-      <option value="5">Pune</option>
+      <option value="" disabled selected>Select</option>
+      <option value="mumbai">Mumbai</option>
+      <option value="nagpur">Nagpur</option>
+      <option value="thane">Thane</option>
+      <option value="pune">Pune</option>
     </select>
 
     <h2>Select State</h2>
     <select name="state" id="state" required>
-      <option value="1">Select</option>
-      <option value="2">Maharashtra</option>
-      <option value="3">Goa</option>
-      <option value="4">Karnataka</option>
-      <option value="5">Tamil Nadu</option>
+      <option value="" disabled selected>Select</option>
+      <option value="maharashtra">Maharashtra</option>
+      <option value="goa">Goa</option>
+      <option value="karnataka">Karnataka</option>
+      <option value="tamil-nadu">Tamil Nadu</option>
     </select>
 
     <h2>Enter Pincode</h2>
@@ -245,13 +131,7 @@
     <a href="index.html" class="button">Go back to the form</a>
   </div>
 
-  <script>
-    function showResponse(event) {
-      event.preventDefault();
-      document.getElementById('registrationForm').style.display = 'none';
-      document.getElementById('responseMessage').style.display = 'block';
-    }
-  </script>
+  <script src="form-script.js"></script>
 </body>
 
 </html>
