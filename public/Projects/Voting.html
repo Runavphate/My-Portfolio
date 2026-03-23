@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentralized Voting System</title>
+    <link rel="stylesheet" href="voting-style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Decentralized Voting System</h1>
+        <div class="login-section">
+            <h2>Voter Login</h2>
+            <form id="login-form">
+                <label for="voter-id">Voter ID:</label>
+                <input type="text" id="voter-id" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="vote-section">
+            <h2>Vote for Your Candidate</h2>
+            <form id="vote-form">
+                <label for="candidates">Choose a candidate:</label>
+                <select id="candidates">
+                    <option value="BJP">BJP</option>
+                    <option value="Congress">Congress</option>
+                    <option value="Other">Other</option>
+                </select>
+                <button type="submit">Vote</button>
+            </form>
+        </div>
+        <div class="results-section">
+            <h2>Voting Results</h2>
+            <ul id="results"></ul>
+        </div>
+        <div class="disclaimer">
+            <p>This is a simulation of a decentralized voting system. It is not connected to a real blockchain and does not provide a secure or auditable voting process.</p>
+        </div>
+    </div>
+    <script src="voting-script.js"></script>
+</body>
+
+</html>

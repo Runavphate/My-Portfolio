@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="form-style.css">
+</head>
+
+<body>
+  <img src="../Images/sppu-logo.png" alt="Sppu logo">
+  <form id="registrationForm" onsubmit="showResponse(event)">
+    <h1>Student Registration Form</h1>
+    <label for="first-name">Enter your First name</label>
+    <input type="text" name="first-name" id="first-name" required>
+
+    <label for="last-name">Enter your Last name</label>
+    <input type="text" name="last-name" id="last-name" required>
+
+    <label for="email">Email Id</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="contact">Phone no.</label>
+    <input type="number" name="contact" id="contact" required>
+
+    <label for="date-of-birth">Date of Birth</label>
+    <input type="date" name="date-of-birth" id="date-of-birth" required>
+
+    <label for="address">Address</label>
+    <textarea name="address" id="address" required></textarea>
+
+    <label for="ssc-marks">SSC Marks</label>
+    <input type="number" name="ssc-marks" id="ssc-marks" required>
+
+    <label for="hsc-marks">HSC Marks</label>
+    <input type="number" name="hsc-marks" id="hsc-marks" required>
+
+    <h2>Select Admission Year</h2>
+    <label class="inline-label">
+      <input type="radio" name="admission-year" id="year-1">
+      1 Year
+    </label>
+    <label class="inline-label">
+      <input type="radio" name="admission-year" id="year-2">
+      2 Year
+    </label>
+    <label class="inline-label">
+      <input type="radio" name="admission-year" id="year-3">
+      3 Year
+    </label>
+    <label class="inline-label">
+      <input type="radio" name="admission-year" id="year-4">
+      4 Year
+    </label>
+
+    <h2>Select Course</h2>
+    <label class="inline-label">
+      <input type="radio" name="course" id="computer-science">
+      Computer Science
+    </label>
+    <label class="inline-label">
+      <input type="radio" name="course" id="data-science">
+      Data Science
+    </label>
+    <label class="inline-label">
+      <input type="radio" name="course" id="blockchain-technology">
+      Blockchain Technology
+    </label>
+    <label class="inline-label">
+      <input type="radio" name="course" id="graphic-designing">
+      Graphic Designing
+    </label>
+
+    <h2>Select Hobbies</h2>
+    <label class="inline-label">
+      <input type="checkbox" name="hobbies" id="drawing">
+      Drawing
+    </label>
+    <label class="inline-label">
+      <input type="checkbox" name="hobbies" id="writing">
+      Writing
+    </label>
+    <label class="inline-label">
+      <input type="checkbox" name="hobbies" id="dancing">
+      Dancing
+    </label>
+    <label class="inline-label">
+      <input type="checkbox" name="hobbies" id="sketching">
+      Sketching
+    </label>
+    <div class="inline-label">
+      <label for="other-hobbies">Other</label>
+      <input type="text" name="other-hobbies" id="other-hobbies">
+    </div>
+
+    <h2>Select Gender</h2>
+    <select name="gender" id="gender" required>
+      <option value="" disabled selected>Select</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+
+    <h2>Select City</h2>
+    <select name="city" id="city" required>
+      <option value="" disabled selected>Select</option>
+      <option value="mumbai">Mumbai</option>
+      <option value="nagpur">Nagpur</option>
+      <option value="thane">Thane</option>
+      <option value="pune">Pune</option>
+    </select>
+
+    <h2>Select State</h2>
+    <select name="state" id="state" required>
+      <option value="" disabled selected>Select</option>
+      <option value="maharashtra">Maharashtra</option>
+      <option value="goa">Goa</option>
+      <option value="karnataka">Karnataka</option>
+      <option value="tamil-nadu">Tamil Nadu</option>
+    </select>
+
+    <h2>Enter Pincode</h2>
+    <input type="number" id="pincode">
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
+  <div class="response-message" id="responseMessage">
+    <h1>Response Recorded</h1>
+    <p>Thank you for submitting your details. Your response has been recorded successfully.</p>
+    <a href="index.html" class="button">Go back to the form</a>
+  </div>
+
+  <script src="form-script.js"></script>
+</body>
+
+</html>
