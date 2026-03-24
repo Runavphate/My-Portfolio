@@ -6,31 +6,31 @@ function Projects() {
   const projectsData = [
     {
       id: 1,
-      icon: "🗳️",
-      title: "Decentralized Voting System",
-      desc: "Blockchain-based voting system ensuring transparent, tamper-proof elections. Built with Solidity and Ethereum.",
-      link: "/Projects/Voting.html"
-    },
-    {
-      id: 2,
-      icon: "📝",
-      title: "Student Admission Form",
-      desc: "Interactive HTML form to collect user data for academic institutions to store it securely for future use. Ensures validated data entry.",
-      link: "/Projects/Form.html"
-    },
-    {
-      id: 3,
       icon: "🖼️",
       title: "NFT Marketplace",
       desc: "Blockchain Based NFT Marketplace using react and vite where user can buy, sell and mint exclusive NFT's. Securely managed on-chain.",
       link: "https://nft-marketplace-three-rosy.vercel.app"
     },
     {
-      id: 4,
+      id: 2,
       icon: "📈",
       title: "Crypto Portfolio Tracker",
       desc: "Comprehensive Blockchain Crypto Portfolio, keeping track of your crypto assets and computing their real-time values based on live market data APIs.",
       link: "https://mycryptoportfoliotracker.vercel.app/"
+    },
+    {
+      id: 3,
+      icon: "🏥",
+      title: "Pay-As-You-Recover",
+      desc: "Medical EMI Calculator with Grace Period & Flexible Repayment. Adjusting EMI based on income capacity with real-time risk assessment.",
+      link: "https://medical-emi-calculator.vercel.app/"
+    },
+    {
+      id: 4,
+      icon: "🩺",
+      title: "MedChain",
+      desc: "Blockchain-powered medical record security. Encrypt and upload records to IPFS, managing specific doctor access via Sepolia smart contracts.",
+      link: "https://medchain-kappa.vercel.app/"
     }
   ];
 
